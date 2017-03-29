@@ -19,4 +19,4 @@ Developed using Angular2 this app was designed as an admin app using the Draftab
 #### Edit Prospect Page
   ![Alt text](github-images/DraftableAdmin-EditProspectPage.png "Edit Prospect")
 #### Create Prospect Page
-    ![Alt text](github-images/DraftableAdmin-CreateProspectPage.png "Create Prospect")
+  ![Alt text](github-images/DraftableAdmin-CreateProspectPage.png "Create Prospect")
