@@ -12,12 +12,11 @@ Developed using Angular2 this app was designed as an admin app using the Draftab
   * Edit/Update Prospect
   * Delete Prospect
 
-* Images
-  * Login Page
-    ![Alt text](github-images/DraftableAdmin-LoginPage.png "Login")
-  * All Prospects Page
-    ![Alt text](github-images/DraftableAdmin-AllProspectsPage.png "All Prospects")
-  * Edit Prospect Page
-    ![Alt text](github-images/DraftableAdmin-EditProspectPage.png "Edit Prospect")
-  * Create Prospect Page
+### Images
+#### Login Page
+  ![Alt text](github-images/DraftableAdmin-LoginPage.png "Login")
+#### All Prospects Page
+#### Edit Prospect Page
+  ![Alt text](github-images/DraftableAdmin-EditProspectPage.png "Edit Prospect")
+#### Create Prospect Page
     ![Alt text](github-images/DraftableAdmin-CreateProspectPage.png "Create Prospect")
