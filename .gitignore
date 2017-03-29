@@ -1,3 +1,5 @@
 node_modules
 .tern-project
 .ds_store
+npm-debug.log
+.editorconfig
