@@ -1,0 +1,32 @@
+<nav class="navbar navbar-default navbar-fixed-top" style="positon:fixed">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" style="font-weight:bold;">Draftable Admin</a>
+    </div>
+    <form class="navbar-form navbar-right">
+      <button (click)="logoutClick()" type="button" class="btn btn-primary btn-sm">Logout</button>
+      <button (click)="createNewProspectClick()" type="button" class="btn btn-primary btn-sm">Create New Prospect</button>
+    </form>
+  </div>
+</nav>
+<br><br><br>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Prospect Name</th>
+        <th>School</th>
+        <th>Position</th>
+        <th>Rank</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players">
+        <td><a routerLink="/prospect/{{player.id}}">{{player.value.fName + " " + player.value.lName}}</a></td>
+        <td>{{player.value.school}}</td>
+        <td>{{player.value.position}}</td>
+        <td>{{player.key}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

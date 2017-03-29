@@ -1,0 +1,122 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<div *ngIf="!createPlayer">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="font-weight:bold;">Edit Prospect: {{playerInfo.firstName}} {{playerInfo.lastName}}</a>
+      </div>
+      <form class="navbar-form navbar-right">
+        <button (click)="deletePlayerClick()" type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#deletePlayerModal">Delete {{playerInfo.firstName}} {{playerInfo.lastName}}</button>
+      </form>
+    </div>
+  </nav>
+   <form class="form-horizontal">
+     <div class="form-group" style="positon:relative; left:50%;">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="fName">First Name:</label>
+       <div class="col-sm-4">
+         <input type="fName" class="form-control" id="fName" placeholder="Enter First Name" value={{playerInfo.firstName}} disabled="true" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="lName">Last Name:</label>
+       <div class="col-sm-4">
+         <input type="lName" class="form-control" id="lName" placeholder="Enter Last Name" value={{playerInfo.lastName}} disabled="true" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="school">School:</label>
+       <div class="col-sm-4">
+         <input type="school" class="form-control" id="school" placeholder="Enter School" value="{{playerInfo.school}}" disabled="true"/>
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="height">Height:</label>
+       <div class="col-sm-4">
+         <input #height type="height" class="form-control" id="height" placeholder="Enter Height" value="{{playerInfo.height}}" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="weight">Weight:</label>
+       <div class="col-sm-4">
+         <input #weight type="weight" class="form-control" id="weight" placeholder="Enter Weight" value="{{playerInfo.weight}}" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="position">Position:</label>
+       <div class="col-sm-4">
+         <input #position type="position" class="form-control" id="position" placeholder="Enter Position" value="{{playerInfo.position}}" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="rank">Rank:</label>
+       <div class="col-sm-4">
+         <input #rank type="rank" class="form-control" id="rank" placeholder="Enter Rank" value="{{playerInfo.rank}}"/>
+       </div>
+     </div>
+     <div class="form-group">
+       <div class="col-sm-offset-4 col-sm-4">
+         <button (click)="editOrCreatePlayer()" type="submit" class="btn btn-primary btn-block" style="float:left">Edit {{playerInfo.firstName}} {{playerInfo.lastName}}</button>
+       </div>
+     </div>
+   </form>
+</div>
+<div *ngIf="createPlayer">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" style="font-weight:bold;">Create New Prospect</a>
+      </div>
+    </div>
+  </nav>
+   <form class="form-horizontal">
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="fName">First Name:</label>
+       <div class="col-sm-4">
+         <input #fName type="fName" class="form-control" id="fName" placeholder="Enter First Name" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="lName">Last Name:</label>
+       <div class="col-sm-4">
+         <input #lName type="lName" class="form-control" id="lName" placeholder="Enter Last Name"  />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="school">School:</label>
+       <div class="col-sm-4">
+         <input #school type="school" class="form-control" id="school" placeholder="Enter School" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="height">Height:</label>
+       <div class="col-sm-4">
+         <input #height type="height" class="form-control" id="height" placeholder="Enter Height" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="weight">Weight:</label>
+       <div class="col-sm-4">
+         <input #weight type="weight" class="form-control" id="weight" placeholder="Enter Weight" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="position">Position:</label>
+       <div class="col-sm-4">
+         <input #position type="position" class="form-control" id="position" placeholder="Enter Position" />
+       </div>
+     </div>
+     <div class="form-group">
+       <label class="control-label col-sm-2 col-sm-offset-2" for="rank">Rank:</label>
+       <div class="col-sm-4">
+         <input #rank type="rank" class="form-control" id="rank" placeholder="Enter Rank" />
+       </div>
+     </div>
+     <div class="form-group">
+       <div class="col-sm-offset-4 col-sm-4">
+         <button (click)="editOrCreatePlayer()" type="submit" class="btn btn-primary btn-block" style="float:left">Create Prospect</button>
+       </div>
+     </div>
+   </form>
+</div>
