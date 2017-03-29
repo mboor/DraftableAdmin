@@ -2,7 +2,7 @@
 
 Developed using Angular2 this app was designed as an admin app using the DraftableApi; https://github.com/mboor/DraftableApi
 
-*Note this was created in my free time for fun to increase my working knowledge of Angular2 and web applications.*
+*Note this was created in my free time for fun to increase my working knowledge of Angular2.*
 
 * Draftable Admin Functionality
   * Cookie Authorization
